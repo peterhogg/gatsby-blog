@@ -7,7 +7,7 @@ import { rhythm } from "../utils/typography"
 function FrontPageHeader() {
   return (
     <StaticQuery
-      query={bioQuery}
+      query={headerQuery}
       render={data => {
         const { author } = data.site.siteMetadata
         return (
@@ -40,8 +40,8 @@ function FrontPageHeader() {
   )
 }
 
-const bioQuery = graphql`
-  query BioQuery {
+const headerQuery = graphql`
+  query HeaderQuery {
     avatar: file(absolutePath: { regex: "/gatsby-icon.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
