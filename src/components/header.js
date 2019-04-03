@@ -1,43 +1,29 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-
+import "./header.scss"
+import Particles from 'react-particles-js';
 import { rhythm } from "../utils/typography"
 
-function FrontPageHeader() {
-  return (
-    <StaticQuery
-      query={headerQuery}
-      render={data => {
-        const { author } = data.site.siteMetadata
-        return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
+function FrontPageHeader(props) {
+    return (
+        <StaticQuery
+            query={headerQuery}
+            render={data => {
+                const { email, github } = data.site.siteMetadata.social
+                const { title, description } = props;
+                return (
+                    <div>
+                        <h1>{title}</h1>
+                        <h2>{description}</h2>
+                        <div className="icons-header">
+                            <a aria-label="Send email" href={`mailto:${email}`}>Email <i className="icon fa fa-envelope"></i></a>
+                            <a aria-label="My Github" target="_blank" href={`https://github.com/${github}`}>Github <i className="icon fa fa-github-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                )
             }}
-          >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
-              Written by <strong>{author}</strong>
-            </p>
-          </div>
-        )
-      }}
-    />
-  )
+        />
+    )
 }
 
 const headerQuery = graphql`
@@ -53,7 +39,9 @@ const headerQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          twitter,
+          email,
+          github
         }
       }
     }

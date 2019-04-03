@@ -1,11 +1,13 @@
 module.exports = {
 	siteMetadata: {
-	  title: `Peter Hoggarth`,
+		title: `Peter Hoggarth`,
 	  author: `Peter Hoggarth`,
-	  description: `Toronto based software developer.`,
+	  description: `Full stack software developer.`,
 	  siteUrl: `https://peterhoggarth.com`,
 	  social: {
-		  twitter: 'test',
+			twitter: 'test',
+			email: 'hoggarth.peter@gmail.com',
+			github: 'peterhogg'
 	  }
 	},
 	plugins: [
@@ -80,7 +82,8 @@ module.exports = {
 		options: {
 		  pathToConfigModule: `src/utils/typography`,
 		},
-	  },
+		},
+		`gatsby-plugin-sass`,
 	],
   }
   
