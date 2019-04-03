@@ -4,13 +4,15 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  return graphql(
+  const blogPost = path.resolve(`./src/templates/blog-post.js`);
+  const projectTemplate = path.resolve(`./src/templates/project.js`);
+  graphql(
     `
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
+		  limit: 1000,
+		  filter: {fileAbsolutePath: {regex: "/(\/content\/blog)/"}}
         ) {
           edges {
             node {
@@ -50,6 +52,48 @@ exports.createPages = ({ graphql, actions }) => {
 
     return null
   })
+  return graphql(
+	  `
+		{
+		  allMarkdownRemark(
+			sort: { fields: [frontmatter___date], order: DESC }
+			limit: 1000,
+			filter: {fileAbsolutePath: {regex: "/(\/content\/projects)/"}}
+		  ) {
+			edges {
+			  node {
+				fields {
+				  slug
+				}
+				frontmatter {
+				  title
+				}
+			  }
+			}
+		  }
+		}
+	  `
+	).then(result => {
+	  if (result.errors) {
+		throw result.errors
+	  }
+  
+	  // Create project pages.
+	  const projects = result.data.allMarkdownRemark.edges
+  
+	  projects.forEach((post, index) => {
+		
+		createPage({
+		  path: post.node.fields.slug,
+		  component: projectTemplate,
+		  context: {
+			slug: post.node.fields.slug,
+		  },
+		})
+	  })
+  
+	  return null
+	})
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

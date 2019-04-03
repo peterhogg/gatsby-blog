@@ -10,7 +10,8 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+	const posts = data.blogs.edges
+	const projects = data.projects.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -19,6 +20,30 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
+		<h3>Projects</h3>
+		{projects.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </div>
+          )
+		})}
+		<h3>Blog</h3>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -40,7 +65,8 @@ class BlogIndex extends React.Component {
               />
             </div>
           )
-        })}
+		})}
+		
       </Layout>
     )
   }
@@ -55,7 +81,30 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+	blogs: allMarkdownRemark(sort: { 
+		fields: [frontmatter___date],
+		order: DESC },
+		filter: {fileAbsolutePath: {regex: "/(\/content\/blog)/"}}
+	) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+	}
+	projects: allMarkdownRemark(sort: { 
+		fields: [frontmatter___date],
+		order: DESC },
+		filter: {fileAbsolutePath: {regex: "/(\/content\/projects)/"}}
+	) {
       edges {
         node {
           excerpt
