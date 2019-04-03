@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import "./header.scss"
 import Particles from 'react-particles-js';
 import { rhythm } from "../utils/typography"
 
