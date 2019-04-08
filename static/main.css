@@ -1,3 +1,7 @@
 *{
     font-family: Roboto,
 }
+code{
+    background-color: #FFFF66;
+    font-family: "Ubuntu Mono"
+}
