@@ -23,7 +23,7 @@ function SubPageHeader(props) {
 								style={{
 									fontSize: "5rem",
 									fontFamily: "Roboto",
-									fontWeight: "normal",
+									fontWeight: "bold",
 									marginTop: "0px",
 								}}
 							>

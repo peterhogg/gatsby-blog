@@ -19,14 +19,13 @@ function FrontPageHeader(props) {
 							width: "100%",
 							textAlign: "center",
 							bottom: "40vh",
-							pointerEvents: "none",
 							fontFamily: "Roboto",
 						}}>
 							<h1
 								style={{
 									fontSize: "5rem",
 									fontFamily: "Roboto",
-									fontWeight: "normal",
+									fontWeight: "bold",
 								}}
 							>
 								{title}
