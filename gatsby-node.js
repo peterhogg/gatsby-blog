@@ -84,7 +84,7 @@ exports.createPages = ({ graphql, actions }) => {
 	  projects.forEach((post, index) => {
 		
 		createPage({
-		  path: post.node.fields.slug,
+		  path: `/project${post.node.fields.slug}`,
 		  component: projectTemplate,
 		  context: {
 			slug: post.node.fields.slug,
