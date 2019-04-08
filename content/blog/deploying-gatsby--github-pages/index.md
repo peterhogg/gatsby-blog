@@ -9,8 +9,9 @@ The first step will be installing the github pages package
 `$npm i --save-dev gh-pages`
 
 We will then need to add a deployment script to package.json  
-`"deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"`  
+`"deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"`  
 Make sure to specify the branch you'd like github to use in the -b paramater.  
+I would recomend keeping your source code, and github pages brances seperate, as you won't want the build files in your main development branch
 
 Github will server our site with the following URL structure:
 `username.github.io/repo`  
