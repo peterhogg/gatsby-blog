@@ -48,7 +48,7 @@ function SubPageHeader(props) {
 
 const headerQuery = graphql`
   query SubHeaderQuery {
-    avatar: file(absolutePath: { regex: "/gatsby-icon.png/" }) {
+    avatar: file(absolutePath: { regex: "/peter.jpg/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
