@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Hoggarth]]></title><description><![CDATA[Full stack software developer.]]></description><link>https://peterhoggarth.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 08 Apr 2019 22:41:31 GMT</lastBuildDate><item><title><![CDATA[Deploying a Gatsby site to Github Pages]]></title><description><![CDATA[Gatsby makes it very easy to deploy a site to github pages.  The first step will be installing the github pages package We will then need to…]]></description><link>https://peterhoggarth.com/deploying-gatsby--github-pages/</link><guid isPermaLink="false">https://peterhoggarth.com/deploying-gatsby--github-pages/</guid><pubDate>Mon, 08 Apr 2019 18:15:00 GMT</pubDate><content:encoded>&lt;p&gt;Gatsby makes it very easy to deploy a site to github pages. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Hoggarth]]></title><description><![CDATA[Full stack software developer.]]></description><link>https://peterhoggarth.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 08 Apr 2019 22:52:07 GMT</lastBuildDate><item><title><![CDATA[Deploying a Gatsby site to Github Pages]]></title><description><![CDATA[Gatsby makes it very easy to deploy a site to github pages.  The first step will be installing the github pages package We will then need to…]]></description><link>https://peterhoggarth.com/deploying-gatsby--github-pages/</link><guid isPermaLink="false">https://peterhoggarth.com/deploying-gatsby--github-pages/</guid><pubDate>Mon, 08 Apr 2019 18:15:00 GMT</pubDate><content:encoded>&lt;p&gt;Gatsby makes it very easy to deploy a site to github pages. &lt;/p&gt;
 &lt;p&gt;The first step will be installing the github pages package&lt;br&gt;
 &lt;code class=&quot;language-text&quot;&gt;$npm i --save-dev gh-pages&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;We will then need to add a deployment script to package.json&lt;br&gt;
@@ -15,7 +15,7 @@ This can be handled in the gatsby-config.js file, by adding &lt;code class=&quot
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/gatsby-blog/static/17cf38be76ff767516ab09c388d9d90b/2f992/peter.jpg&quot;
+    href=&quot;/gatsby-blog/static/e266f9926cce25f625165ec488e13662/3a2a3/peter.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -23,23 +23,22 @@ This can be handled in the gatsby-config.js file, by adding &lt;code class=&quot
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 350px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 141.17647058823528%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABQAEAwb/xAAXAQEBAQEAAAAAAAAAAAAAAAABAgAD/9oADAMBAAIQAxAAAAFPDuBcjHyO+WaK5Wtcaz//xAAcEAACAgMBAQAAAAAAAAAAAAACAwESAAQREzL/2gAIAQEAAQUCKsk64LSREto9zaazuvLPMiqHZc+IgMObBq/dpz//xAAWEQEBAQAAAAAAAAAAAAAAAAAQAQL/2gAIAQMBAT8BLk//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIQEf/aAAgBAgEBPwFUpGn/xAAeEAACAgICAwAAAAAAAAAAAAAAAQIRMWEQISIyUf/aAAgBAQAGPwJxvsuBc8ilH3jgp+Ojob+G5MqOBpjeuP/EAB0QAQACAgIDAAAAAAAAAAAAAAEAESFRMWFBsdH/2gAIAQEAAT8hqAVLqJ5lnK+CDCy1qJ9sdRTJGj7gqLA4uCnwLlIsAldQzTCMHYMI2T//2gAMAwEAAgADAAAAEPP1Tf/EABYRAQEBAAAAAAAAAAAAAAAAAAEAEP/aAAgBAwEBPxDEEJL/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QUMaLGi//xAAeEAEBAAICAgMAAAAAAAAAAAABEQAhQVExYaHB0f/aAAgBAQABPxBQoy5x5xR9V8zsDDkqqOl4YfAUadF8r0/DkF/1uR9PLi5lsCzQ/eGnVs7hcrPTocH4GQQosVXHvTkNcYHT1dV3jlYxlmf/2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAMEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAbVS7z9OhRtyLCJbwp//xAAcEAEAAgIDAQAAAAAAAAAAAAACAQMABBESExT/2gAIAQEAAQUC5gR9hwqGXX6FVdbQPM7ViGNKVrqXV//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EAB0QAAICAQUAAAAAAAAAAAAAAAABAhEhEjEyQWH/2gAIAQEABj8CtnHApLspuhw9NKIqLqzMmxOW5//EABsQAQACAwEBAAAAAAAAAAAAAAEAESExQVFx/9oACAEBAAE/IW16I5At9ZmgAQbYLuyYkeBZU6Cdcm3sVrHqxDL0uf/aAAwDAQACAAMAAAAQcP8Awf/EABURAQEAAAAAAAAAAAAAAAAAABBB/9oACAEDAQE/ECn/xAAWEQEBAQAAAAAAAAAAAAAAAAAAAUH/2gAIAQIBAT8QtRiP/8QAHBABAQADAAMBAAAAAAAAAAAAAREAITFBcaFh/9oACAEBAAE/EFMT1lxS7GVn2nMc2kRzR5GjfuKwsgZRdOMzPFd+/ucXJCXScuNMrvYx+oVeTGV/c//Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Peter Headshot&quot;
         title=&quot;&quot;
-        src=&quot;/gatsby-blog/static/17cf38be76ff767516ab09c388d9d90b/c739e/peter.jpg&quot;
-        srcset=&quot;/gatsby-blog/static/17cf38be76ff767516ab09c388d9d90b/8ee9c/peter.jpg 148w,
-/gatsby-blog/static/17cf38be76ff767516ab09c388d9d90b/ebbe7/peter.jpg 295w,
-/gatsby-blog/static/17cf38be76ff767516ab09c388d9d90b/c739e/peter.jpg 590w,
-/gatsby-blog/static/17cf38be76ff767516ab09c388d9d90b/2f992/peter.jpg 680w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/gatsby-blog/static/e266f9926cce25f625165ec488e13662/3a2a3/peter.jpg&quot;
+        srcset=&quot;/gatsby-blog/static/e266f9926cce25f625165ec488e13662/8ee9c/peter.jpg 148w,
+/gatsby-blog/static/e266f9926cce25f625165ec488e13662/ebbe7/peter.jpg 295w,
+/gatsby-blog/static/e266f9926cce25f625165ec488e13662/3a2a3/peter.jpg 350w&quot;
+        sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
