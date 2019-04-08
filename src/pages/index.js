@@ -19,7 +19,7 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <h3>Projects</h3>
+        <h3><Link to="project">Projects</Link></h3>
         {projects.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
@@ -29,7 +29,7 @@ class BlogIndex extends React.Component {
                       marginBottom: rhythm(1 / 4),
                     }}
                   >
-                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    <Link style={{ boxShadow: `none` }} to={`/project${node.fields.slug}`}>
                       {title}
                     </Link>
                   </h3>
@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
                 </div>
               )
         })}
-        <h3>Blog</h3>
+        <h3><Link to="/blog">Blogs</Link></h3>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
@@ -85,7 +85,8 @@ export const pageQuery = graphql`
 	blogs: allMarkdownRemark(sort: { 
 		fields: [frontmatter___date],
 		order: DESC },
-		filter: {fileAbsolutePath: {regex: "/(\/content\/blog)/"}}
+    filter: {fileAbsolutePath: {regex: "/(\/content\/blog)/"}},
+    limit: 3
 	) {
       edges {
         node {
@@ -104,7 +105,8 @@ export const pageQuery = graphql`
 	projects: allMarkdownRemark(sort: { 
 		fields: [frontmatter___date],
 		order: DESC },
-		filter: {fileAbsolutePath: {regex: "/(\/content\/projects)/"}}
+    filter: {fileAbsolutePath: {regex: "/(\/content\/projects)/"}},
+    limit: 3
 	) {
       edges {
         node {
