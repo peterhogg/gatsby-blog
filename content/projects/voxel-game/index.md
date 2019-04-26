@@ -8,3 +8,5 @@ A block building game made in Unity3D.
 Explore the 3D plane, modifying the blocks, and build whatever you please.
 
 ![Voxel Game](./VoxelGame.png)
+
+You can play the game [here](http://voxel.peterhoggarth.com)
