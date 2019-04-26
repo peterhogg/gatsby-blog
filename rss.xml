@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Hoggarth]]></title><description><![CDATA[Full stack software developer.]]></description><link>https://peterhoggarth.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 08 Apr 2019 22:52:07 GMT</lastBuildDate><item><title><![CDATA[Deploying a Gatsby site to Github Pages]]></title><description><![CDATA[Gatsby makes it very easy to deploy a site to github pages.  The first step will be installing the github pages package We will then need to…]]></description><link>https://peterhoggarth.com/deploying-gatsby--github-pages/</link><guid isPermaLink="false">https://peterhoggarth.com/deploying-gatsby--github-pages/</guid><pubDate>Mon, 08 Apr 2019 18:15:00 GMT</pubDate><content:encoded>&lt;p&gt;Gatsby makes it very easy to deploy a site to github pages. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Hoggarth]]></title><description><![CDATA[Full stack software developer.]]></description><link>https://peterhoggarth.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 26 Apr 2019 21:20:57 GMT</lastBuildDate><item><title><![CDATA[Deploying a Gatsby site to Github Pages]]></title><description><![CDATA[Gatsby makes it very easy to deploy a site to github pages.  The first step will be installing the github pages package We will then need to…]]></description><link>https://peterhoggarth.com/deploying-gatsby--github-pages/</link><guid isPermaLink="false">https://peterhoggarth.com/deploying-gatsby--github-pages/</guid><pubDate>Mon, 08 Apr 2019 18:15:00 GMT</pubDate><content:encoded>&lt;p&gt;Gatsby makes it very easy to deploy a site to github pages. &lt;/p&gt;
 &lt;p&gt;The first step will be installing the github pages package&lt;br&gt;
 &lt;code class=&quot;language-text&quot;&gt;$npm i --save-dev gh-pages&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;We will then need to add a deployment script to package.json&lt;br&gt;
@@ -47,7 +47,7 @@ This can be handled in the gatsby-config.js file, by adding &lt;code class=&quot
     &lt;/p&gt;
 &lt;p&gt;My name is Peter Hoggarth, and I’m a software developer.&lt;br&gt;
 I specialise in full stack development, with a strong preference towards JavaScript stacks.&lt;/p&gt;
-&lt;p&gt;Please feel free to contact me at hoggarth.peter@gmail.com&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Voxel Game]]></title><description><![CDATA[A block building game made in Unity3D. Explore the 3D plane, modifying the blocks, and build whatever you please.]]></description><link>https://peterhoggarth.com/voxel-game/</link><guid isPermaLink="false">https://peterhoggarth.com/voxel-game/</guid><pubDate>Mon, 01 Apr 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;A block building game made in Unity3D.&lt;br&gt;
+&lt;p&gt;Please feel free to contact me at hoggarth.peter@gmail.com&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Voxel Game]]></title><description><![CDATA[A block building game made in Unity3D. Explore the 3D plane, modifying the blocks, and build whatever you please. You can play the game…]]></description><link>https://peterhoggarth.com/voxel-game/</link><guid isPermaLink="false">https://peterhoggarth.com/voxel-game/</guid><pubDate>Mon, 01 Apr 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;A block building game made in Unity3D.&lt;br&gt;
 Explore the 3D plane, modifying the blocks, and build whatever you please.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -85,7 +85,8 @@ Explore the 3D plane, modifying the blocks, and build whatever you please.&lt;/p
   &lt;/span&gt;
   
   &lt;/a&gt;
-    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Yarr]]></title><description><![CDATA[A reddit reader for android. Explore your favourite subreddit.
+    &lt;/p&gt;
+&lt;p&gt;You can play the game &lt;a href=&quot;http://voxel.peterhoggarth.com&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Yarr]]></title><description><![CDATA[A reddit reader for android. Explore your favourite subreddit.
 ]]></description><link>https://peterhoggarth.com/yarr/</link><guid isPermaLink="false">https://peterhoggarth.com/yarr/</guid><pubDate>Fri, 06 May 2016 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;A reddit reader for android. Explore your favourite subreddit.
 
   &lt;a
